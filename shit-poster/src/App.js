@@ -65,12 +65,7 @@ function App() {
       renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
       onSliderClick= {() => openInNewTab('https://www.youtube.com/watch?v=e4Kuwc88vZI')}
     />
-    <ReactSlider
-    className="horizontal-slider"
-    thumbClassName="example-thumb"
-    trackClassName="example-track"
-    renderTrack={(props, state) => <div {...props} />}//custom track
-/>
+   
 
 
       </header>

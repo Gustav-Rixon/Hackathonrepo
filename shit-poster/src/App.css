@@ -49,7 +49,6 @@
   line-height: 38px;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 100s linear;
