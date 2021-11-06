@@ -1,0 +1,17 @@
+[
+    {
+        "meme" : 0,
+        "path" : "src/meme/meme0.gif" 
+    }
+    ,
+    {
+        "meme" : 1,
+        "path" : "src/meme/5t6skv.jpg" 
+    }
+    ,
+    {
+        "meme" : 2,
+        "path" : "src/meme/meme2.gif" 
+    }
+
+]

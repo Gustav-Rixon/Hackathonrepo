@@ -7,9 +7,58 @@
   pointer-events: none;
 }
 
+.App-logo2 {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #e00d0d;
+  border: 5px solid #3774ff;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: rgb(0, 0, 0);
+}
+
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo2 {
+    animation: App-logo-spin2 infinite 100s linear;
   }
 }
 
@@ -31,9 +80,20 @@
 
 @keyframes App-logo-spin {
   from {
+    transform: rotate(-90000000000000000deg);
+  }
+  to {
+    transform: rotate(90000000000000000000deg);
+  }
+}
+
+@keyframes App-logo-spin2 {
+  from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
 }
+
+
