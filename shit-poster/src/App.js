@@ -21,6 +21,13 @@ const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null
 }
 
+
+function killcomupter(){
+  while (true){
+    openInNewTab('https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Foriginal%2F000%2F027%2F195%2Fcover10.jpg')
+  }
+}
+
 function App() {
 
   return (
@@ -33,6 +40,10 @@ function App() {
 
 <button onClick={() => openInNewTab('https://cdn.discordapp.com/attachments/414542735866069008/901183687184494632/maxresdefault_1.jpg')}>
   I dont like this site!
+</button>
+
+<button onClick={() => killcomupter()}>
+  I really dont like this site!!!!!!!
 </button>
 
 
